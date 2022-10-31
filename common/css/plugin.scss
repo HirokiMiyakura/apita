@@ -1,0 +1,15 @@
+.wp-pagenavi {
+	display: block;
+	margin: 40px auto;
+	font-size: 28px;
+	text-align: center;
+}
+
+.wp-pagenavi a,
+.wp-pagenavi span {
+	color: #000;
+	text-decoration: none !important;
+	border: none !important;
+	padding: 3px 7px !important;
+	margin: 2px 7px !important;
+}

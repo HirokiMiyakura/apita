@@ -8,6 +8,8 @@
 <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/common/css/ress.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/common/css/common.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/common/css/hamburger.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/common/css/plugin.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/common/css/main.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/slick/slick.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/slick/slick-theme.css" type="text/css" />
@@ -27,7 +29,7 @@
   <div class="header">
     <h1>
       <a href="<?php echo home_url(); ?>">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/top/logo.svg" />
+        <img src="<?php echo get_template_directory_uri(); ?>/img/top/logo.svg" alt="APITA戸塚店専門店街ロゴ" />
       </a>
     </h1>
     <nav class="main_nav pc">
@@ -41,12 +43,10 @@
     <div class="search">
       <?php get_search_form(); ?>
     </div>
-    <div class="hamburger sp">
-      <p>HAM</p>
-    </div>
+    <?php get_template_part('template/hamburger-template'); ?>
     <nav class="sub_nav pc">
       <ul>
-        <li><a href="<?php echo home_url(); ?>/recruit/">求人</a></li>
+        <li><a target="_blank" href="https://mydomo.domonet.jp/apita.walk-senmontengai/">求人</a></li>
         <li><a href="<?php echo home_url(); ?>/facility/">施設紹介</a></li>
       </ul>
     </nav>

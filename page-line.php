@@ -5,14 +5,14 @@
 <section class="page">
   <div class="lime-bg">
     <div class="inner">
-      <h3 class="leading">アピタ戸塚からのおトクな情報やキャンペーン情報など、さまざまな情報をLINEで受け取ることができます。<br>
+      <h3 class="leading">アピタ戸塚からのおトクな情報やキャンペーン情報など、さまざまな情報をLINEで受け取ることができます。
   以下の手順で簡単に登録ができますので、ぜひご利用ください。</h3>
       <div class="two">
         <div class="two__item">
-          <p><img src="<?php echo get_template_directory_uri(); ?>/img/line/1.svg" alt="" /></p>
+          <p><img src="<?php echo get_template_directory_uri(); ?>/img/line/1.svg" alt="キャンペーン情報1" /></p>
         </div>
         <div class="two__item">
-          <p><img src="<?php echo get_template_directory_uri(); ?>/img/line/2.svg" alt="" /></p>
+          <p><img src="<?php echo get_template_directory_uri(); ?>/img/line/2.svg" alt="キャンペーン情報2" /></p>
         </div>
       </div>
       <h4 class="line-title">LINE公式アカウント 友だち登録の方法</h4>

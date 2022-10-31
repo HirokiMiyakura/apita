@@ -2,12 +2,14 @@
   <div class="inner">
     <div class="footer">
       <div class="footer__item">
+        <h4>メニュー</h4>
         <ul class="footer_list">
-          <li class="footer_list__item"><a href="<?php echo home_url(); ?>/access/">> 営業時間・交通アクセス</a></li>
+          <li class="footer_list__item"><a href="<?php echo home_url(); ?>/shopguide/">> ショップガイド</a></li>  
+          <li class="footer_list__item"><a href="<?php echo home_url(); ?>/floorguide/">> フロアガイド</a></li>
+          <li class="footer_list__item"><a href="<?php echo home_url(); ?>/access/">> 交通アクセス</a></li>
           <li class="footer_list__item"><a href="<?php echo home_url(); ?>/eventnews/">> イベント & ニュース</a></li>
-          <li class="footer_list__item"><a href="<?php echo home_url(); ?>/shopguide/">> ショップガイド</a></li>
-          <li class="footer_list__item"><a href="<?php echo home_url(); ?>/recruit/">> 求人</a></li>
-          <li class="footer_list__item"><a href="<?php echo home_url(); ?>/floorguide/">> フロアマップ</a></li>
+          <li class="footer_list__item"><a href="<?php echo home_url(); ?>/line/">> LINE 公式アカウント</a></li>
+          <li class="footer_list__item"><a target="_blank" href="https://mydomo.domonet.jp/apita.walk-senmontengai/">> 求人</a></li>
           <li class="footer_list__item"><a href="<?php echo home_url(); ?>/facility/">> 施設案内</a></li>
         </ul>
       </div>

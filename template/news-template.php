@@ -1,13 +1,13 @@
 <div class="news">
-  <?php
-    $paged = get_query_var('paged')? get_query_var('paged') : 1;
-    $information= new WP_Query( array(
-      'post_type' => 'post',
-      'paged' => $paged,
-      'post_status' => 'publish',
-      'posts_per_page' => 8,
-  ));
-  if ( $information ->have_posts() ) : ?>
+<?php
+  $paged = get_query_var('paged')? get_query_var('paged') : 1;
+  $information= new WP_Query( array(
+    'post_type' => 'post',
+    'paged' => $paged,
+    'post_status' => 'publish',
+    'posts_per_page' => 8,
+));
+if ( $information ->have_posts() ) : ?>
   <?php while ( $information -> have_posts() ) : $information -> the_post(); ?>
     <div class="news__item bg_white">
       <a href="<?php the_permalink(); ?>">
@@ -22,14 +22,15 @@
   <?php endwhile; ?>
   <?php endif; ?>
   <?php wp_reset_postdata(); ?>
-  <?php if (!is_home()) : ?>
-    <?php
-      if (function_exists('wp_pagenavi')) {
-        wp_pagenavi(array('query' => $information));
-      }
-      if(function_exists('wp_pagenavi')) { 
-        wp_pagenavi(); 
-      } 
-    ?>
-  <?php endif; ?>
 </div>
+<?php if (!is_home()) : ?>
+  <?php
+    if (function_exists('wp_pagenavi')) {
+      wp_pagenavi(array('query' => $information));
+    }
+    if(function_exists('wp_pagenavi')) { 
+      wp_pagenavi(); 
+    } 
+  ?>
+<?php endif; ?>
+<!-- </div> -->

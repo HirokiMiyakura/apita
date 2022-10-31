@@ -1,0 +1,162 @@
+$main_color: #33b979;
+$text_color: #1d1d1d;
+
+// * {
+// 	margin: 0;
+// 	padding: 0;
+// 	box-sizing: border-box;
+// 	font-family: 'Roboto', sans-serif;
+// }
+
+// body {
+// 	padding: 0 5rem;
+// 	background: #222;
+// }
+
+// //  --------BURGER MENU CODE :D
+
+// header {
+// 	width: 100%;
+// 	height: 100px;
+// 	background: #333;
+// 	display: flex;
+// 	flex-flow: row nowrap;
+// 	justify-content: space-between;
+// 	align-items: center;
+// 	padding: 2rem;
+// 	position: relative;
+// }
+
+// .logo {
+// 	font-weight: 800;
+// 	color: white;
+// 	font-size: clamp(1.5rem, 5vw, 3rem);
+// }
+
+//Set up our checkbox + Span container positioning and size
+
+.span-container,
+.checkbox {
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	right: 14px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+//Lets make our checkbox function but dissapear. Also lets add some z-index so it's always on top [clickable]
+.checkbox {
+	opacity: 0;
+	z-index: 100;
+}
+
+//Add some flex for our Three lines. Our span-container will have flex
+.span-container {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	z-index: 90;
+}
+
+//Style our span (3 burger-menu lines)
+.span-container span {
+	width: 100%;
+	height: 3px;
+	background: white;
+	background: $main_color;
+	//We need to add transition and a transform origin of 0 0 (top left).
+	//Try commenting bits out to see what happens and why it's important.
+	transition: all 250ms ease-out;
+	transform-origin: 0 0;
+}
+
+//Transitions [animations]
+//Logic: When checkbox is checked:
+//Rotate Span1 -45Deg (first child or nth-last-child(1))
+//Make Span2 smaller + hide it.
+//rotate Span3 45 Deg.
+//The translate stuff is just for small adjustments. Try changing them and see //how the X looks like when checkbox:checked.
+.checkbox:checked ~ .span-container span:nth-last-child(1) {
+	transform: rotate(-45deg) translate(-1px, 0px);
+}
+
+.checkbox:checked ~ .span-container span:nth-last-child(2) {
+	transform: rotate(0deg) scale(0.2, 0.2);
+	opacity: 0;
+}
+
+.checkbox:checked ~ .span-container span:nth-last-child(3) {
+	transform: rotate(45deg) translate(0px, -1px);
+}
+
+//style our navigation for full screen when checkbox:checked.
+.nav-container {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	z-index: 50;
+	background: #f9faf5;
+	transition: all 250ms ease-out;
+	//translate(-100%, 0%) basically hides the entire navigation to the left by 100%. [invisible.]
+	//This is great as all we do when we checkbox:checked is change these values to 0%, 0% and it will
+	//transition. Pretty good.
+	transform: translateX(-100%);
+	a {
+		text-align: center;
+		text-decoration: none;
+		color: $text_color;
+		font-size: 16px;
+		font-weight: bold;
+		// margin: 14px auto;
+		// padding-bottom: 14px;
+		padding: 21px 0;
+		width: 90%;
+		border-bottom: 1px solid $text_color;
+	}
+
+	a:hover {
+		color: $main_color;
+	}
+}
+
+.checkbox:checked ~ .nav-container {
+	transform: translateX(0%);
+}
+
+//Now we add style for full-width screen [not mobile]
+
+@media screen and (min-width: 1000px) {
+	//Lets hide our checkbox and spans, we won't need them.
+	.checkbox,
+	.span-container {
+		display: none;
+	}
+
+	//Copy EVERYTHING from .nav-container above and then change all values.
+	//We must do this as our aim is to OVERWRITE everything to be exactly as we need.
+	.nav-container {
+		position: relative;
+		left: none;
+		top: none;
+		width: auto;
+		height: 100%;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
+		z-index: 50;
+		background: transparent;
+		transition: none;
+		transform: none;
+		a {
+			margin-right: 1.5rem;
+		}
+	}
+}

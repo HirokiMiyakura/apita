@@ -6,7 +6,7 @@
   <div class="inner">
     <div class="facility">
       <div class="facility__item">
-        <p><img src="<?php echo get_template_directory_uri(); ?>/img/facility/1.jpg" alt="" /></p>
+        <p><img src="<?php echo get_template_directory_uri(); ?>/img/facility/1.jpg" alt="駐車場" /></p>
       </div>
       <div class="facility__item">
         <h3>♦︎駐車場</h3>
@@ -23,7 +23,7 @@
     <hr>
     <div class="facility">
       <div class="facility__item">
-        <p><img src="<?php echo get_template_directory_uri(); ?>/img/facility/2.jpg" alt="" /></p>
+        <p><img src="<?php echo get_template_directory_uri(); ?>/img/facility/2.jpg" alt="リサイクルステーション" /></p>
       </div>
       <div class="facility__item">
         <h3>♦︎リサイクルステーション</h3>
@@ -33,7 +33,7 @@
     <h3 class="komidashi mt">1F</h3>
     <div class="facility">
       <div class="facility__item">
-        <p><img src="<?php echo get_template_directory_uri(); ?>/img/facility/3.jpg" alt="" /></p>
+        <p><img src="<?php echo get_template_directory_uri(); ?>/img/facility/3.jpg" alt="サービスカウンター" /></p>
       </div>
       <div class="facility__item">
         <h3>♦︎サービスカウンター</h3>
@@ -53,7 +53,7 @@
     <hr>
     <div class="facility">
       <div class="facility__item">
-        <p><img src="<?php echo get_template_directory_uri(); ?>/img/facility/4.jpg" alt="" /></p>
+        <p><img src="<?php echo get_template_directory_uri(); ?>/img/facility/4.jpg" alt="純水・氷・ドライアイス" /></p>
       </div>
       <div class="facility__item">
         <h3>♦︎純水・氷・ドライアイス</h3>
@@ -63,7 +63,7 @@
     <hr>
     <div class="facility">
       <div class="facility__item">
-        <p><img src="<?php echo get_template_directory_uri(); ?>/img/facility/5.jpg" alt="" /></p>
+        <p><img src="<?php echo get_template_directory_uri(); ?>/img/facility/5.jpg" alt="ロッカー・冷蔵ロッカー" /></p>
       </div>
       <div class="facility__item">
         <h3>♦︎ロッカー・冷蔵ロッカー</h3>
@@ -73,7 +73,7 @@
     <hr>
     <div class="facility">
       <div class="facility__item">
-        <p><img src="<?php echo get_template_directory_uri(); ?>/img/facility/6.jpg" alt="" /></p>
+        <p><img src="<?php echo get_template_directory_uri(); ?>/img/facility/6.jpg" alt="コインスター" /></p>
       </div>
       <div class="facility__item">
         <h3>♦︎コインスター</h3>
@@ -83,7 +83,7 @@
     <hr>
     <div class="facility">
       <div class="facility__item">
-        <p><img src="<?php echo get_template_directory_uri(); ?>/img/facility/7.jpg" alt="" /></p>
+        <p><img src="<?php echo get_template_directory_uri(); ?>/img/facility/7.jpg" alt="コンプレッサー（自転車専用空気入れ）" /></p>
       </div>
       <div class="facility__item">
         <h3>♦︎コンプレッサー（自転車専用空気入れ）</h3>
@@ -93,7 +93,7 @@
     <h3 class="komidashi mt">3F</h3>
     <div class="facility">
       <div class="facility__item">
-        <p><img src="<?php echo get_template_directory_uri(); ?>/img/facility/8.jpg" alt="" /></p>
+        <p><img src="<?php echo get_template_directory_uri(); ?>/img/facility/8.jpg" alt="あかちゃんルーム" /></p>
       </div>
       <div class="facility__item">
         <h3>♦︎あかちゃんルーム</h3>
