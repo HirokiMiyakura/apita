@@ -60,7 +60,8 @@
     </ul>
   </nav>
 </header>
-<?php if (!(is_home() ||  is_single())) : ?>
+<?php // if (!(is_home() ||  is_single())) : ?>
+<?php if (!is_home()) : ?>
 <div class="inner">
   <div class="breadcrumb">
     <?php if(function_exists('bcn_display')) {
