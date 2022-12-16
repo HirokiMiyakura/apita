@@ -14,7 +14,8 @@ $text_color: #1d1d1d;
 }
 
 body {
-	font-family: sans-serif;
+	font-family: 'Noto Sans JP', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro',
+		'メイリオ', 'Meiryo', '游ゴシック体', 'Yu Gothic', YuGothic, sans-serif;
 	color: #1d1d1d;
 }
 
@@ -77,6 +78,10 @@ hr {
 	font-weight: bold;
 }
 
+.mini-font {
+	font-size: 12px;
+}
+
 .midashi {
 	font-size: 42px;
 	text-align: center;
@@ -134,6 +139,9 @@ hr {
 
 .page {
 	padding: 40px 0 70px;
+	p {
+		line-height: 1.75;
+	}
 }
 
 .page-outer {

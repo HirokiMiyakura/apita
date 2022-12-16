@@ -30,13 +30,11 @@
     <?php wp_reset_postdata(); ?>
   </div>
 </section>
-
-
 <section id="INFO">
   <div class="inner">
     <div class="openhour">
       <div class="openhour__left"><p>営業時間</p></div>
-      <div class="openhour__right"><p>9:00~22:00　<br class="sp"><span>(※専門店により営業時間は異なります)</span></p></div>
+      <div class="openhour__right"><p>9:00~22:00<br class="sp"><span>(※専門店により営業時間が異なります)</span></p></div>
     </div>
     <div class="categories">
       <div class="categories__item">
@@ -80,25 +78,26 @@
 </section>
 <section id="OTOKU">
   <div class="inner">
+    <?php
+      $paged = get_query_var('paged')? get_query_var('paged') : 1;
+      $information= new WP_Query( array(
+        'post_type' => 'information',
+        'paged' => $paged,
+        'post_status' => 'publish',
+      ));
+    if ( $information ->have_posts() ) : ?>
     <h2 class="midashi">おトクな情報<span>Information</span></h2>
     <div class="news">
-      <?php
-        $paged = get_query_var('paged')? get_query_var('paged') : 1;
-        $information= new WP_Query( array(
-          'post_type' => 'information',
-          'paged' => $paged,
-          'post_status' => 'publish',
-        ));
-      if ( $information ->have_posts() ) : ?>
       <?php while ( $information -> have_posts() ) : $information -> the_post(); ?>
-      
       <div class="news__item">
         <?php
           $pdf = get_field('pdf');
         ?>
-          <a href="<?php if($pdf) { echo $pdf['url'] . '" target="_blank"'; } else { echo the_permalink(); } ?>">
-          <?php if( get_field('image') ): ?>
-            <img src="<?php the_field('image'); ?>" />
+        <?php if( get_field('image') ): ?>
+          <a rel="gallery" href="<?php echo the_field('image'); ?>">
+            <div class="news__item__photo">
+              <img src="<?php the_field('image'); ?>" />
+            </div>
           <?php endif; ?>
           <h3><?php the_title(); ?></h3>
         </a>

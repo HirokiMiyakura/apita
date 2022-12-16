@@ -5,7 +5,7 @@
 <section class="page">
   <div class="lime-bg">
     <div class="inner">
-      <h3 class="leading">アピタ戸塚からのおトクな情報やキャンペーン情報など、さまざまな情報をLINEで受け取ることができます。
+      <h3 class="leading">アピタ戸塚からのおトクな情報やキャンペーン情報など、<br class="pc">さまざまな情報をLINEで受け取ることができます。
   以下の手順で簡単に登録ができますので、ぜひご利用ください。</h3>
       <div class="two">
         <div class="two__item">
@@ -20,12 +20,18 @@
         <div class="three__item">
           <h5>方法1 友だち追加ボタンから</h5>
           <p>以下の画像をクリックして「友だち追加」して登録。</p>
-          <p></p>
+          <p class="centering">
+            <a href="https://line.me/R/ti/p/@apita571">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/line/3.png" alt="友達追加" />
+            </a>
+          </p>
         </div>
         <div class="three__item">
           <h5>方法1 二次元コードから</h5>
           <p>下記の二次元コードを読み取って登録。</p>
-          <p></p>
+          <p class="centering">
+            <img width="100" src="<?php echo get_template_directory_uri(); ?>/img/line/qrcode_190614.png" alt="QRコード" />
+          </p>
         </div>
         <div class="three__item">
           <h5>方法3 LINEアプリの検索から</h5>

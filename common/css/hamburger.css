@@ -2,9 +2,9 @@
 .checkbox {
   width: 35px;
   height: 35px;
-  position: absolute;
+  position: fixed;
   right: 14px;
-  top: 50%;
+  top: 48px;
   transform: translateY(-50%);
 }
 

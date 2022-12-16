@@ -1,11 +1,13 @@
 <div class="news">
 <?php
+  $cat_info = get_category( get_query_var( 'cat' ) );
   $paged = get_query_var('paged')? get_query_var('paged') : 1;
   $information= new WP_Query( array(
     'post_type' => 'post',
     'paged' => $paged,
     'post_status' => 'publish',
     'posts_per_page' => 8,
+    'category_name' => $cat_info->slug,
 ));
 if ( $information ->have_posts() ) : ?>
   <?php while ( $information -> have_posts() ) : $information -> the_post(); ?>
@@ -21,7 +23,7 @@ if ( $information ->have_posts() ) : ?>
           </div>
         <?php else : ?>
           <div class="news__item__photo">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/top/logo.svg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/img/top/news-image.png" alt="" />
           </div>
         <?php endif ; ?>
         <p class="date"><?php the_time('Y/m/d'); ?></p>

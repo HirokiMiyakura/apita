@@ -11,28 +11,28 @@
     <div class="four">
       <div class="four__item">
         <p>
-          <a href="<?php echo home_url(); ?>/shopguide#fashion">
+          <a class="refresh" href="<?php echo home_url(); ?>/shopguide#fashion">
             <img class="sp" src="<?php echo get_template_directory_uri(); ?>/img/top/fashion_icon_sp.svg" alt="ファッションアイコン" />
           </a>
         </p>
       </div>
       <div class="four__item">
         <p>
-          <a href="<?php echo home_url(); ?>/shopguide#kurashi">
+          <a class="refresh" href="<?php echo home_url(); ?>/shopguide#kurashi">
             <img class="sp" src="<?php echo get_template_directory_uri(); ?>/img/top/kurashi_icon_sp.svg" alt="暮らしアイコン" />
           </a>
         </p>
       </div>
       <div class="four__item">
         <p>
-          <a href="<?php echo home_url(); ?>/shopguide#foods">
+          <a class="refresh" href="<?php echo home_url(); ?>/shopguide#foods">
             <img class="sp" src="<?php echo get_template_directory_uri(); ?>/img/top/food_icon_sp.svg" alt="飲食アイコン" />
           </a>
         </p>
       </div>
       <div class="four__item">
         <p>
-          <a href="<?php echo home_url(); ?>/shopguide#service">
+          <a class="refresh" href="<?php echo home_url(); ?>/shopguide#service">
             <img class="sp" src="<?php echo get_template_directory_uri(); ?>/img/top/service_icon_sp.svg" alt="サービスアイコン" />
           </a>
         </p>

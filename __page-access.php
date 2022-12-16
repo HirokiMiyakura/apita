@@ -10,7 +10,7 @@
         <p>営業時間</p>
       </div>
       <div class="info__item">
-        <p>アピタ　9:00 ~ 22:00<br>専門店　店舗により営業時間が異なります</p>
+        <p>アピタ　9:00 ~ 22:00<br>専門店により営業時間が異なります</p>
       </div>
     </div>
     <div class="info">
@@ -31,11 +31,14 @@
     </div>
     <div class="info border-none">
       <div class="info__item">
-        <p>営業時間</p>
+        <p>住所</p>
       </div>
       <div class="info__item">
         <p>〒244-0816<br>神奈川県横浜市戸塚区上倉田町769番1</p>
       </div>
+    </div>
+    <div class="gmap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4403.740433540613!2d139.53510448014458!3d35.39883459426566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185a9a8fa3af3b%3A0xdd4430069c511aab!2z44Ki44OU44K_5oi45aGa5bqX!5e0!3m2!1sja!2sjp!4v1668761956707!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <h3 class="komidashi mt">アクセス方法</h3>
     <div class="access">

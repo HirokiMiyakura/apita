@@ -4,6 +4,7 @@
     $information= new WP_Query( array(
       'post_type' => 'shop',
       'posts_per_page' => 50,
+      'order' => 'ASC',
     ));
   if ( $information ->have_posts() ) : ?>
   <?php while ( $information -> have_posts() ) : $information -> the_post(); ?>
@@ -41,7 +42,7 @@
         <p class="description"><?php echo $description; ?></p>
       <?php endif; ?>
       <?php if ($url) : ?>
-        <p class="link"><a href="<?php echo $url; ?>">ホームページ</a></p>
+        <p class="link"><a target="_blank" href="<?php echo $url; ?>">ホームページ</a></p>
       <?php endif; ?>
     </div>
     <?php endif; ?>

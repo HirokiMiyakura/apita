@@ -15,9 +15,11 @@
     <div class="search">
       <?php while(have_posts()): the_post(); ?>
       <div class="search__item">
-        <h4><a href="<?php the_permalink(); ?>">> <?php echo get_the_title(); ?></a></h4>
-        <p class="url"><?php the_permalink(); ?></p>
-        <p><?php the_excerpt(); ?></p>
+        <a href="<?php the_permalink(); ?>">
+          <h4>> <?php echo get_the_title(); ?></h4>
+          <p class="url"><?php the_permalink(); ?></p>
+          <p><?php the_excerpt(); ?></p>
+        </a>
       </div>
       <?php endwhile; ?>
     </div>

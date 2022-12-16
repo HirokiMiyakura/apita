@@ -20,6 +20,7 @@
       </p>
       <div class="single_content">
         <?php the_content(); ?>
+        <p class="single_date"><?php the_time('Y/m/d'); ?></p>
       </div>
     </div>
   </div>

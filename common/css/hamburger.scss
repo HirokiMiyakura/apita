@@ -1,47 +1,17 @@
 $main_color: #33b979;
 $text_color: #1d1d1d;
 
-// * {
-// 	margin: 0;
-// 	padding: 0;
-// 	box-sizing: border-box;
-// 	font-family: 'Roboto', sans-serif;
-// }
-
-// body {
-// 	padding: 0 5rem;
-// 	background: #222;
-// }
-
-// //  --------BURGER MENU CODE :D
-
-// header {
-// 	width: 100%;
-// 	height: 100px;
-// 	background: #333;
-// 	display: flex;
-// 	flex-flow: row nowrap;
-// 	justify-content: space-between;
-// 	align-items: center;
-// 	padding: 2rem;
-// 	position: relative;
-// }
-
-// .logo {
-// 	font-weight: 800;
-// 	color: white;
-// 	font-size: clamp(1.5rem, 5vw, 3rem);
-// }
-
 //Set up our checkbox + Span container positioning and size
 
 .span-container,
 .checkbox {
 	width: 35px;
 	height: 35px;
-	position: absolute;
+	// position: absolute;
+	position: fixed;
 	right: 14px;
-	top: 50%;
+	// top: 50%;
+	top: 48px;
 	transform: translateY(-50%);
 }
 

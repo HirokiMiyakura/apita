@@ -3,6 +3,9 @@
 	margin: 40px auto;
 	font-size: 28px;
 	text-align: center;
+	.pages {
+		display: none;
+	}
 }
 
 .wp-pagenavi a,
@@ -12,4 +15,57 @@
 	border: none !important;
 	padding: 3px 7px !important;
 	margin: 2px 7px !important;
+}
+
+.slick-prev,
+.slick-next {
+	z-index: 10 !important;
+	background: rgb(0, 0, 0, 0.4) !important;
+	width: 30px !important;
+	height: 30px !important;
+	border-radius: 30px !important;
+	&::before {
+		// position: absolute !important;
+		// top: 50% !important;
+		// left: 50% !important;
+		// transform: translate(-50%, -50%) !important;
+		font-family: 'Noto Sans JP', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro',
+			'メイリオ', 'Meiryo', '游ゴシック体', 'Yu Gothic', YuGothic, sans-serif !important;
+		font-weight: bold !important;
+	}
+}
+
+.slick-prev {
+	left: calc((100vw - 818px) / 2) !important;
+	&::before {
+		content: '<' !important;
+	}
+}
+
+.slick-next {
+	right: calc((100vw - 818px) / 2) !important;
+	&::before {
+		content: '>' !important;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.slick-prev,
+	.slick-next {
+		width: 30px !important;
+		height: 30px !important;
+		border-radius: 30px !important;
+	}
+
+	.slick-prev {
+		left: 10px !important;
+	}
+
+	.slick-next {
+		right: 10px !important;
+	}
+}
+
+#cboxClose {
+	text-indent: -50px !important;
 }
