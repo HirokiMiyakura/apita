@@ -18,7 +18,7 @@
         <ul>
           <li>■アピタ 9:00～22:00 </li>
           <li class="mb"><span class="mini-font">（※専門店により営業時間が異なります）</span></li>
-          <li>TEL: <a href="tel:045-864-1201">045-864-1201</a></li>
+          <li>TEL: <a href="tel:0570009571">0570-009571（ナビダイヤル）</a></li>
           <li class="mb">〒244-0816 神奈川県横浜市戸塚区上倉田町769番1</li>
           <li>&copy;APITA TOTSUKA.All Rights Reserved.</li>
         </ul>
